@@ -1,0 +1,33 @@
+@import './mixins.scss';
+
+* {
+  box-sizing: border-box;
+  outline: none;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Helvetica Neue', 'PingFang SC', 'Segoe UI', 'Microsoft Yahei',
+    '微软雅黑', sans-serif;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul li,
+ol li {
+  list-style-type: none;
+}
+
+i {
+  font-style: normal;
+}
