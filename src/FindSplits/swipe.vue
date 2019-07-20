@@ -1,7 +1,7 @@
 <template>
   <div class="swipe">
     <van-swipe class="van-swipe" :autoplay="3000">
-      <van-swipe-item v-for="(image, index) in images" :key="index">
+      <van-swipe-item v-for="image  in images" :key="image.id">
         <img :src="image.pic" alt="轮播图" />
         <span class="type-title">{{image.typeTitle}}</span>
       </van-swipe-item>

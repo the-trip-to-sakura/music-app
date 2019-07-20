@@ -1,14 +1,14 @@
  <template>
-  <div class="recommendedsonglist">
+  <div class="recommended-song-list">
     <div class="header-list">
       <span class="left-hedaer">推荐歌单</span>
       <span class="right-header">歌单广场</span>
     </div>
     <div class="list">
-      <div class="song-list" v-for="(list,index) in songlist" :key="index">
-        <router-link class="list-id" :to="`recommendedsonglist/${list.id}`">
+      <div class="song-list" v-for="list in songlist" :key="list.id">
+        <router-link class="list-id" :to="`recommended_song_list/${list.id}`">
           <img :src="list.picUrl" alt="推荐列表海报" />
-          <span class="playcount">{{Math.floor((list.playCount)/10000)}}万</span>
+          <span class="play-count">{{Math.floor((list.playCount)/10000)}}万</span>
           <span class="expression">{{list.name}}</span>
         </router-link>
       </div>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.recommendedsonglist {
+.recommended-song-list {
   margin-top: 30px;
   .header-list {
     display: flex;
@@ -82,7 +82,7 @@ export default {
         -webkit-line-clamp: 2;
         overflow: hidden;
       }
-      .playcount {
+      .play-count {
         font-size: 20px;
         position: absolute;
         right: 10px;

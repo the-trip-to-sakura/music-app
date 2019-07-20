@@ -9,10 +9,10 @@ export default new Router({
     {
       path: '/',
       redirect: '/find',
-      component: () => import('./views/BotNav.vue'),
+      component: () => import('./App.vue'),
       children: [
         {
-          path: '/find',
+          path: 'find',
           component: () => import('./views/find.vue')
         },
         {
@@ -30,7 +30,7 @@ export default new Router({
       ]
     },
     {
-      path: '/recommendedsonglist/:id',
+      path: '/recommended_song_list/:id',
       component: () => import('./views/songListDetails.vue')
     }
   ]

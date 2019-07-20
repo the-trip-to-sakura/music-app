@@ -2,23 +2,23 @@
   <div class="selection">
     <div class="selection-icon">
       <div class="icon">
-        <span class="iconfont icon-tuijian"></span>
+        <span class="iconfont icon-recommended"></span>
         <span class="words">每日推荐</span>
       </div>
       <div class="icon">
-        <span class="iconfont icon-paihangbang"></span>
+        <span class="iconfont icon-songlist"></span>
         <span class="words">歌单</span>
       </div>
       <div class="icon">
-        <span class="iconfont icon-icon-"></span>
+        <span class="iconfont icon-ranklist"></span>
         <span class="words">排行榜</span>
       </div>
       <div class="icon">
-        <span class="iconfont icon-diantaizhibo"></span>
+        <span class="iconfont icon-livebroadcast"></span>
         <span class="words">电台</span>
       </div>
       <div class="icon">
-        <span class="iconfont icon-zhibo"></span>
+        <span class="iconfont icon-mv"></span>
         <span class="words">直播</span>
       </div>
     </div>

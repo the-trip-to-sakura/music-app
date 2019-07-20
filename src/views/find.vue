@@ -1,17 +1,17 @@
 <template>
   <div class="find">
-    <HomeHeader></HomeHeader>
-    <Swipe></Swipe>
-    <Selection></Selection>
-    <RecommendedSongList></RecommendedSongList>
+    <home-header></home-header>
+    <swipe></swipe>
+    <selection></selection>
+    <recommended-song-list></recommended-song-list>
   </div>
 </template>
 
 <script>
 import HomeHeader from '../components/HomeHeader.vue'
-import Swipe from '../components/swipe.vue'
-import Selection from '../components/Selection.vue'
-import RecommendedSongList from '../components/RecommendedSongList.vue'
+import Swipe from '../FindSplits/swipe.vue'
+import Selection from '../FindSplits/Selection.vue'
+import RecommendedSongList from '../FindSplits/RecommendedSongList.vue'
 
 export default {
   name: 'find',

@@ -1,6 +1,6 @@
 <template>
   <div class="movie">
-    <HomeHeader></HomeHeader>
+    <home-header></home-header>
   </div>
 </template>
 

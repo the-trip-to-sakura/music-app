@@ -1,12 +1,12 @@
 <template>
   <div class="header">
-    <div class="leftheader">
+    <div class="left-header">
       <van-icon class="icon" name="wap-home" />
     </div>
-    <div class="inputheader">
+    <div class="input-header">
       <input type="text" placeholder=" 输入您想要搜索的歌曲" />
     </div>
-    <div class="rightheader">
+    <div class="right-header">
       <van-icon class="icon" name="bar-chart-o" />
     </div>
   </div>
@@ -29,9 +29,9 @@ export default {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  .leftheader,
-  .rightheader,
-  .inputheader {
+  .left-header,
+  .right-header,
+  .input-header {
     padding: 20px;
     .icon {
       font-size: 60px;
