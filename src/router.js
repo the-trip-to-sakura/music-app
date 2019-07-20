@@ -8,30 +8,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/find',
-      component: () => import('./App.vue'),
-      children: [
-        {
-          path: 'find',
-          component: () => import('./views/find.vue')
-        },
-        {
-          path: 'movie',
-          component: () => import('./views/movie.vue')
-        },
-        {
-          path: 'mine',
-          component: () => import('./views/mine.vue')
-        },
-        {
-          path: 'friend',
-          component: () => import('./views/friend.vue')
-        }
-      ]
+      name: 'find',
+      component: () => import('./views/find/find.vue')
+    },
+    {
+      path: '/movie',
+      name: 'movie',
+      component: () => import('./views/movie/movie.vue')
+    },
+    {
+      path: '/mine',
+      name: 'mine',
+      component: () => import('./views/mine/mine.vue')
+    },
+    {
+      path: '/friend',
+      name: 'friend',
+      component: () => import('./views/friend/friend.vue')
     },
     {
       path: '/recommended_song_list/:id',
-      component: () => import('./views/songListDetails.vue')
+      name: 'recommendedSongList',
+      component: () => import('./views/songListDetails/songListDetails.vue')
     }
   ]
 })

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HomeHeader from '../components/HomeHeader.vue'
+import HomeHeader from '../../components/HomeHeader.vue'
 
 export default {
   name: 'movie',

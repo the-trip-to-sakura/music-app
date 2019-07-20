@@ -2,7 +2,7 @@
   <div class="app">
     <router-view></router-view>
     <van-tabbar class="nav-bottom" v-model="active" active-color="red" route>
-      <van-tabbar-item class="tabbar-item" to="/find" replace>
+      <van-tabbar-item class="tabbar-item" to="/" replace>
         <van-icon class="icon" name="music-o" />
         <span class="label">发现</span>
       </van-tabbar-item>
